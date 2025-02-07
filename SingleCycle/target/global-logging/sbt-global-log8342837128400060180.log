@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab2.mux_onehot_4to2Test, Some(fbd1d0c8-6651-4f94-b700-c3cf32cde74e), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab2/counter4.scala:21:35: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : chisel3.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m}.elsewhen( io.s2 == 0.B && io.s1 === 1 .B && io.s0 === 1.B ){[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Oct 18, 2024, 3:25:30 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

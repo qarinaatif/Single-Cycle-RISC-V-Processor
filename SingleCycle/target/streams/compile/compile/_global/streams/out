@@ -1,0 +1,24 @@
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:4:33: not found: type module[0m
+[0m[[0m[31merror[0m] [0m[0mclass instructionMemory extends module{[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:5:14: not found: value IO[0m
+[0m[[0m[31merror[0m] [0m[0m    val io = IO(new bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:5:21: not found: type bundle[0m
+[0m[[0m[31merror[0m] [0m[0m    val io = IO(new bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:6:26: inferred type arguments [chisel3.internal.firrtl.Width] do not conform to method apply's type parameter bounds [T <: chisel3.Data][0m
+[0m[[0m[31merror[0m] [0m[0m        val readadress = Input(10.W)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:6:35: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : chisel3.internal.firrtl.Width[0m
+[0m[[0m[31merror[0m] [0m[0m required: T[0m
+[0m[[0m[31merror[0m] [0m[0m        val readadress = Input(10.W)[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:9:15: overloaded method value apply with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  [T <: chisel3.Data](size: Int, t: T)chisel3.Mem[T] <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  [T <: chisel3.Data](size: BigInt, t: T)chisel3.Mem[T][0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Int, chisel3.UInt.type)[0m
+[0m[[0m[31merror[0m] [0m[0m    val mem = Mem(1024,UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m

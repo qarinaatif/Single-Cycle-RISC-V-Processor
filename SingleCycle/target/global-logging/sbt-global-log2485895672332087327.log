@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab3.Decoder2to4Test, Some(92a60c37-e933-47f5-bf12-f53ce7ea8516), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/Decoder2to4test.scala:6:22: object freespec is not a member of package org.scalatest[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.freespec.AnyFreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/Decoder2to4test.scala:8:31: not found: type AnyFreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder2to4Test extends AnyFreeSpec with ChiselScalatestTester {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/Decoder2to4test.scala:9:50: value in is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m    "Decoder2to4 should decode inputs correctly" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Nov 4, 2024, 2:56:21 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

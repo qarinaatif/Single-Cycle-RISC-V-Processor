@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab2.Mux_8to1Test, Some(96b43d60-4694-4c0e-b8d6-0534f7d96fae), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab2/counter2.scala:24:41: ')' expected but '.' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    val mux := MuxLookup ( io . sel1 , 0.U ,0.B , Array ([0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab2/counter2.scala:33:6: '=' expected but ')' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    ))[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab2/counter2.scala:35:1: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Oct 16, 2024, 2:15:41 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

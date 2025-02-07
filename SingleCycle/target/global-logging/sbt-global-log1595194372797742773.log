@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab1.Counter3test, Some(c863d613-2b90-46a2-9162-8e6b4acd9091), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab1/Counter3.scala:35:18: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: chisel3.SInt[0m
+[0m[[0m[31merror[0m] [0m[0mwhen ( count === max ) {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Oct 3, 2024, 3:12:13 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

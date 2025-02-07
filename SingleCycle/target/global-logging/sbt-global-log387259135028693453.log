@@ -1,0 +1,28 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab2.mux_onehot_4to2Test, Some(ea31b90c-69a5-4d42-be31-1ae5fb8b3b8a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmux_onehot_4to2Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- mux_onehot_4to2 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  chisel3.package$RebindingException: Attempted reassignment of binding to UInt<4>(8)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at lab2.mux_onehot_4to2.$anonfun$io$2(counter3.scala:8)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.internal.prefix$.apply(prefix.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at lab2.mux_onehot_4to2.$anonfun$io$1(counter3.scala:8)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at lab2.mux_onehot_4to2.<init>(counter3.scala:8)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at lab2.mux_onehot_4to2Test.$anonfun$new$2(Counter3test.scala:8)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 801 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	lab2.mux_onehot_4to2Test[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed Oct 16, 2024, 3:22:11 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

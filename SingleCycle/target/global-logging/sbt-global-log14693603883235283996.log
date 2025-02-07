@@ -1,0 +1,257 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab1.Counter1test, Some(b06eb3a0-3a29-4998-a4c0-49a78dd36978), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab1/Counter3.scala:10:25: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m      val maxUInt = max.U(n.W)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:4:5: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 0.U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:4:11: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 0.U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:6:5: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 1.U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:6:11: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 1.U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:8:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 2. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:8:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 2. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:10:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 3. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:10:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 3. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:12:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 4. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:12:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 4. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:14:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 5. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:14:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 5. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:16:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 6. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:16:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 6. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:18:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 7. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:18:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 7. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:20:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 8. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:20:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 8. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:22:6: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 9. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:22:12: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 9. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:24:22: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0mval ALU_COPY_A = 10. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:24:28: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0mval ALU_COPY_A = 10. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:25:22: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0mval ALU_COPY_B = 11. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:25:28: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0mval ALU_COPY_B = 11. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:27:7: value U is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 15. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:27:13: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m= 15. U (4. W )[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/EncoderIO.scala:10:1: not found: value switch[0m
+[0m[[0m[31merror[0m] [0m[0mswitch ( io . in ) {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/EncoderIO.scala:11:1: not found: value is[0m
+[0m[[0m[31merror[0m] [0m[0mis  (" b0001 " . U)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/EncoderIO.scala:14:1: not found: value is[0m
+[0m[[0m[31merror[0m] [0m[0mis(" b0010 " . U ) {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/EncoderIO.scala:17:1: not found: value is[0m
+[0m[[0m[31merror[0m] [0m[0mis (" b0100 " . U ) {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/EncoderIO.scala:20:1: not found: value is[0m
+[0m[[0m[31merror[0m] [0m[0mis{[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/LM.scala:14:6: io is already defined as value io[0m
+[0m[[0m[31merror[0m] [0m[0m val io = IO ( new DecoderIO )[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/LM.scala:14:20: not found: type DecoderIO[0m
+[0m[[0m[31merror[0m] [0m[0m val io = IO ( new DecoderIO )[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:37:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_ADD . U , ( io . in_A + io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:37:23: not found: value ALU_ADD[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_ADD . U , ( io . in_A + io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:37:44: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_ADD . U , ( io . in_A + io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:37:56: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_ADD . U , ( io . in_A + io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:38:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op ===ALU_SUB . U , ( io . in_A - io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:38:22: not found: value ALU_SUB[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op ===ALU_SUB . U , ( io . in_A - io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:38:43: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op ===ALU_SUB . U , ( io . in_A - io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:38:55: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op ===ALU_SUB . U , ( io . in_A - io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:39:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLT . U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:39:23: not found: value ALU_SLT[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLT . U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:39:44: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLT . U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:39:56: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLT . U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:40:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLTU .U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:40:23: not found: value ALU_SLTU[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLTU .U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:40:44: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLTU .U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:40:56: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLTU .U , ( io . in_A < io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:41:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRA . U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:41:23: not found: value ALU_SRA[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRA . U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:41:44: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRA . U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:41:57: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRA . U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:42:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRL .U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:42:23: not found: value ALU_SRL[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRL .U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:42:43: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRL .U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:42:56: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SRL .U , ( io . in_A >> io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:43:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLL .U , ( io . in_A << io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:43:23: not found: value ALU_SLL[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLL .U , ( io . in_A << io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:43:43: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLL .U , ( io . in_A << io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:43:56: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_SLL .U , ( io . in_A << io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:44:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_AND .U , ( io . in_A & io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:44:23: not found: value ALU_AND[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_AND .U , ( io . in_A & io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:44:43: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_AND .U , ( io . in_A & io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:44:55: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_AND .U , ( io . in_A & io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:45:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_OR .U , ( io . in_A | io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:45:23: not found: value ALU_OR[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_OR .U , ( io . in_A | io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:45:42: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_OR .U , ( io . in_A | io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:45:54: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_OR .U , ( io . in_A | io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:46:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_XOR .U , ( io . in_A ^ io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:46:23: not found: value ALU_XOR[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_XOR .U , ( io . in_A ^ io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:46:43: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_XOR .U , ( io . in_A ^ io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:46:55: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_XOR .U , ( io . in_A ^ io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:47:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_COPY_A .U , io . in_A ,[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:47:23: not found: value ALU_COPY_A[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_COPY_A .U , io . in_A ,[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:47:44: value in_A is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_COPY_A .U , io . in_A ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:48:12: value alu_Op is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_COPY_A .U , io . in_B , 0. U ) ) ) ) ) ) ) ) ))))[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:48:23: not found: value ALU_COPY_A[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_COPY_A .U , io . in_B , 0. U ) ) ) ) ) ) ) ) ))))[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:48:44: value in_B is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mMux ( io . alu_Op === ALU_COPY_A .U , io . in_B , 0. U ) ) ) ) ) ) ) ) ))))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:49:6: value out is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mio . out := out[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:50:6: value sum is not a member of chisel3.Record[0m
+[0m[[0m[31merror[0m] [0m[0mio . sum := sum[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/task3.scala:50:13: not found: value sum[0m
+[0m[[0m[31merror[0m] [0m[0mio . sum := sum[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m83 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 7 s, completed Sep 13, 2024, 11:10:27 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
