@@ -1,0 +1,38 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly SingleCycle.InstMemtest, Some(6363941d-9c48-4f08-adda-16dd2232ce13), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/SingleCycle/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:6:33: not found: type module[0m
+[0m[[0m[31merror[0m] [0m[0mclass instructionMemory extends module {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:7:22: inferred type arguments [chisel3.internal.firrtl.Width] do not conform to method apply's type parameter bounds [T <: chisel3.Data][0m
+[0m[[0m[31merror[0m] [0m[0m    val readadress = Input(10.W)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:7:31: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : chisel3.internal.firrtl.Width[0m
+[0m[[0m[31merror[0m] [0m[0m required: T[0m
+[0m[[0m[31merror[0m] [0m[0m    val readadress = Input(10.W)[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:11:14: inferred type arguments [instructionMemory] do not conform to method IO's type parameter bounds [T <: chisel3.Data][0m
+[0m[[0m[31merror[0m] [0m[0m    val io = IO ( new instructionMemory )[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:11:19: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : instructionMemory[0m
+[0m[[0m[31merror[0m] [0m[0m required: T[0m
+[0m[[0m[31merror[0m] [0m[0m    val io = IO ( new instructionMemory )[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:13:26: not found: value imem[0m
+[0m[[0m[31merror[0m] [0m[0mError occurred in an application involving default arguments.[0m
+[0m[[0m[31merror[0m] [0m[0m    loadMemoryFromFile ( imem , initFile )[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:14:8: value readdata is not a member of type parameter T[0m
+[0m[[0m[31merror[0m] [0m[0m    io.readdata := mem ( io.readadress / 4. U )[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:14:29: value readadress is not a member of type parameter T[0m
+[0m[[0m[31merror[0m] [0m[0m    io.readdata := mem ( io.readadress / 4. U )[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed Feb 7, 2025, 3:57:57 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

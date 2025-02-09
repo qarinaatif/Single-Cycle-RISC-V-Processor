@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab2.mux_onehot_4to2Test, Some(12acdbcc-ef8a-4ae6-9fa4-9e2d91f688eb), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab2/Counter3test.scala:10:12: value in0 is not a member of chisel3.Bundle{val in: chisel3.UInt; val sel: chisel3.Bool; val out: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m      v.io.in0.poke(1.U)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab2/Counter3test.scala:11:12: value in1 is not a member of chisel3.Bundle{val in: chisel3.UInt; val sel: chisel3.Bool; val out: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m      v.io.in1.poke(0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab2/Counter3test.scala:12:12: value in2 is not a member of chisel3.Bundle{val in: chisel3.UInt; val sel: chisel3.Bool; val out: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m      v.io.in2.poke(0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab2/Counter3test.scala:13:12: value in3 is not a member of chisel3.Bundle{val in: chisel3.UInt; val sel: chisel3.Bool; val out: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m      v.io.in3.poke(0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 6 s, completed Oct 17, 2024, 12:53:58 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

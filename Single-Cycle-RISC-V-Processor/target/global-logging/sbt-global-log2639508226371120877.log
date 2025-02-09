@@ -1,0 +1,44 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab3.ALUOPtest, Some(511e64af-5b16-4a98-9af3-7e1c1a197489), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:44:43: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_ADD . U || io . alu_Op === ALUOP.ALU_SUB .U , sum ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:44:79: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_ADD . U || io . alu_Op === ALUOP.ALU_SUB .U , sum ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:45:43: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_SLT . U || io . alu_Op === ALUOP.ALU_SLTU .U , cmp ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:45:80: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_SLT . U || io . alu_Op === ALUOP.ALU_SLTU .U , cmp ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:46:43: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_SRA . U || io . alu_Op === ALUOP.ALU_SRL .U , shiftr ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:46:79: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_SRA . U || io . alu_Op === ALUOP.ALU_SRL .U , shiftr ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:47:42: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_SLL .U , shiftl ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:48:42: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_AND .U , ( io . in_A & io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:49:41: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_OR .U , ( io . in_A | io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:50:42: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_XOR .U , ( io . in_A ^ io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:51:45: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_COPY_A .U , io . in_A ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:52:45: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_COPY_B .U , io . in_B , 0. U ) ) ) ) ) ) ) ) )[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Oct 23, 2024, 3:06:57 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

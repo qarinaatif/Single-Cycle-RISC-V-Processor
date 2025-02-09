@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab3.EncoderIOtest, Some(e51e57d2-e25f-49bf-8e8a-7bbaf9dc7434), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/BranchControltest.scala:9:11: value fnct3 is not a member of lab3.BranchControl[0m
+[0m[[0m[31merror[0m] [0m[0m        c.fnct3.poke("b000".U)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/BranchControltest.scala:10:11: value branch is not a member of lab3.BranchControl[0m
+[0m[[0m[31merror[0m] [0m[0m        c.branch.poke(1.B)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/BranchControltest.scala:11:11: value arg_x is not a member of lab3.BranchControl[0m
+[0m[[0m[31merror[0m] [0m[0m        c.arg_x.poke(10.U)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/BranchControltest.scala:12:11: value arg_y is not a member of lab3.BranchControl[0m
+[0m[[0m[31merror[0m] [0m[0m        c.arg_y.poke(10.U)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/test/scala/lab3/BranchControltest.scala:14:11: value br_taken is not a member of lab3.BranchControl[0m
+[0m[[0m[31merror[0m] [0m[0m        c.br_taken.expect(1.B)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Oct 24, 2024, 2:49:33 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

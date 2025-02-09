@@ -1,0 +1,73 @@
+1725528133220:testOnly and.andtest
+1725605217883:testOnline paractice andtest
+1725605250421:testOnline paractice andTest
+1725605313224:testOnly and andtest
+1725605335949:testOnly and.andtest
+1725605934929:testOnly and.andtest -- -DwriteVcd=1
+1725867827997:testOnly counter1.counter1test -- -DwriteVcd=1T
+1725869123782:testOnly lab1.Counter1test -- -DwriteVcd=1
+1725877001832:testOnly lab1.Counter3test -- -DwriteVcd=1
+1725900293539:testOnly lab1.EncoderIOtest -- -DwriteVcd=1
+1725900307272:testOnly lab3.EncoderIOtest -- -DwriteVcd=1
+1726123900939:testOnly lab3.task3
+1726207820454:testOnly lab1.Counter1test
+1726207844138:testOnly lab1.Counter1
+1727166070076:sbt
+1727166104698:testOnly lab1.Counter1test
+1727944319740:testOnly lab1.Counter1test -- -DwriteVcd=1
+1727944913957:testOnly lab1.Count1test
+1727946018780:testOnly lab1.Count1Test
+1727946069797:testOnly lab1.Count1Test -- -DwriteVcd=1
+1727948872807:testOnly lab1.Counter2test
+1727949022684:testOnly lab1.Counter2Test
+1727949718565:testOnly lab1.Counter3test
+1727952939257:testOnly lab1.Counter4test
+1727953053835:git push
+1727953083048:testOnly lab1.Counter4test
+1728547714140:testOnly lab2.Counter1test
+1728549107633:testOnly lab2.Mux_2to1Test
+1728549233840:sbt:Scala-Chisel-Learning-Journey>
+1728549238124:testOnly lab2.Mux_2to1Test
+1728636479199:testOnly lab1.Counter4test
+1728639104628:testOnly lab1.Counter4test -- -DwriteVcd=1
+1728887537903:git push
+1728888026469:git add
+1728888029347:git add .
+1728897288839:testOnly lab2.Mux_8to1Test
+1729074108872:testOnly lab2.mux_onehot_4to2Test
+1729247717768:testOnly lab2.Mux_5to1Test
+1729351477285:testOnly lab2.barrel_shifTest
+1729353262045:testOnly lab2.BarrelShiftTest
+1729354752075:testOnly lab2.barrel_shifTest
+1729585964083:testOnly lab2.EncoderIOtest
+1729586904370:testOnly lab2.Decoder2to4test
+1729587433733:testOnly lab2.EncoderIOtest
+1729588904886:testOnly ALUOPtest.scala
+1729588922228:testOnly lab3.ALUOPtest
+1729678352880:sbt
+1729678358859:testOnly lab3.ALUOPtest
+1729678695442:testOnly lab3.ALUtest
+1729761764324:testOnly lab2.EncoderIOtest
+1729762991108:testOnly lab3.BranchControltest
+1729763373065:testOnly lab3.EncoderIOtest
+1729765924809:testOnly lab3.ALUOPtest
+1730109696048:testOnly lab3.EncoderIOtest
+1730109834932:[A
+1730109841660:testOnly lab3.EncoderIOtest
+1730111383640:testOnly lab3.decodertest
+1730714050019:testOnly lab3.Decoder2to4Test
+1730716000272:testOnly lab2.mux_onehot_4to2Test
+1730716048349:testOnly lab3.Decoder2to4Test
+1730716405678:testOnly lab3.Decoder2to4test
+1730716534853:testOnly lab3.newtest
+1730716610048:clean
+1730716612115:testOnly lab3.newtest
+1730716710648:testOnly lab2.mux_onehot_4to2Test
+1738085332392:testOnly lab1.Counter3test
+1738913566048:testOnly main.ProgramCountertest
+1738913760581:testOnly SingleCycle.ProgramCountertest
+1738925874838:testOnly SingleCycle.InstMemtest
+1738926567984:testOnly SingleCycle.instructionMemorytest
+1738926601517:testOnly SingleCycle.InstructionMemorytest
+1738930933031:testOnly SingleCycle.ProgramCountertest
+1738931076762:testOnly SingleCycle.InstructionMemorytest

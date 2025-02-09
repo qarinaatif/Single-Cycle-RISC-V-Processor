@@ -1,0 +1,28 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/InstructionMemorytest_Test/InstructionMemory.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~InstructionMemory|InstructionMemory>io_readdata",
+    "sources":[
+      "~InstructionMemory|InstructionMemory>io_readadress"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.annotations.LoadMemoryAnnotation",
+    "target":"InstructionMemory.InstructionMemory.mem",
+    "fileName":"src/test/scala/SingleCycle/instructionmemory.txt",
+    "hexOrBinary":"h",
+    "originalMemoryNameOpt":"mem"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/InstructionMemorytest_Test"
+  }
+]

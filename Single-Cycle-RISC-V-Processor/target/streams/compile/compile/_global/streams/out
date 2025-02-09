@@ -1,0 +1,15 @@
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:13:14: inferred type arguments [instructionMemory] do not conform to method IO's type parameter bounds [T <: chisel3.Data][0m
+[0m[[0m[31merror[0m] [0m[0m    val io = IO ( new instructionMemory )[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:13:19: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : instructionMemory[0m
+[0m[[0m[31merror[0m] [0m[0m required: T[0m
+[0m[[0m[31merror[0m] [0m[0m    val io = IO ( new instructionMemory )[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:16:8: value readdata is not a member of type parameter T[0m
+[0m[[0m[31merror[0m] [0m[0m    io.readdata := mem ( io.readadress / 4. U )[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/SingleCycle/src/main/scala/SingleCycle/InstructionMemory.scala:16:29: value readadress is not a member of type parameter T[0m
+[0m[[0m[31merror[0m] [0m[0m    io.readdata := mem ( io.readadress / 4. U )[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

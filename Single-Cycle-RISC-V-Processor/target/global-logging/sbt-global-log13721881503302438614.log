@@ -1,0 +1,59 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly lab3.ALUOPtest, Some(5b881d22-216b-4b6a-98b1-37eafbedeef5), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/qarinaatif/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:40:81: not found: value >[0m
+[0m[[0m[31merror[0m] [0m[0m    val shiftr = ( Cat ( io . alu_Op (0) && shin ( WLEN -1) , shin ) . asSInt > > shamt ) (WLEN -1 , 0)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:44:43: value U is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_ADD . U || io . alu_Op === ALUOP_SUB .U , sum ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:44:64: not found: value ALUOP_SUB[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP.ALU_ADD . U || io . alu_Op === ALUOP_SUB .U , sum ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:45:27: not found: value ALUOP_SLT[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_SLT . U || io . alu_Op === ALUOP_SLTU .U , cmp ,[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:45:60: not found: value ALUOP_SLTU[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_SLT . U || io . alu_Op === ALUOP_SLTU .U , cmp ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:46:27: not found: value ALUOP_SRA[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_SRA . U || io . alu_Op === ALUOP_SRL .U , shiftr ,[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:46:60: not found: value ALUOP_SRL[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_SRA . U || io . alu_Op === ALUOP_SRL .U , shiftr ,[0m
+[0m[[0m[31merror[0m] [0m[0m                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:47:27: not found: value ALUOP_SLL[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_SLL .U , shiftl ,[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:48:27: not found: value ALUOP_AND[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_AND .U , ( io . in_A & io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:49:27: not found: value ALUOP_OR[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_OR .U , ( io . in_A | io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:50:27: not found: value ALUOP_XOR[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_XOR .U , ( io . in_A ^ io . in_B ) ,[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:51:27: not found: value ALUOP_COPY_A[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_COPY_A .U , io . in_A ,[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:52:27: not found: value ALUOP_COPY_B[0m
+[0m[[0m[31merror[0m] [0m[0m    Mux ( io . alu_Op === ALUOP_COPY_B .U , io . in_B , 0. U ) ) ) ) ) ) ) ) )[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/qarinaatif/Scala-Chisel-Learning-Journey/src/main/scala/lab3/ALUOP.scala:40:83: postfix operator shamt should be enabled[0m
+[0m[[0m[33mwarn[0m] [0m[0mby making the implicit value scala.language.postfixOps visible.[0m
+[0m[[0m[33mwarn[0m] [0m[0m----[0m
+[0m[[0m[33mwarn[0m] [0m[0mThis can be achieved by adding the import clause 'import scala.language.postfixOps'[0m
+[0m[[0m[33mwarn[0m] [0m[0mor by setting the compiler option -language:postfixOps.[0m
+[0m[[0m[33mwarn[0m] [0m[0mSee the Scaladoc for value scala.language.postfixOps for a discussion[0m
+[0m[[0m[33mwarn[0m] [0m[0mwhy the feature should be explicitly enabled.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val shiftr = ( Cat ( io . alu_Op (0) && shin ( WLEN -1) , shin ) . asSInt > > shamt ) (WLEN -1 , 0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Oct 23, 2024, 3:01:40 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
