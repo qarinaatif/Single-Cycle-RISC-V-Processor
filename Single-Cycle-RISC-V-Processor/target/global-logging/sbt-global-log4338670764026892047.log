@@ -1,0 +1,28 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly SingleCycle.ImmediateGenerationtest, Some(9007de74-1be8-4a58-975a-bbcfd95cab15), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Single-Cycle-RISC-V-Processor/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mImmediateGenerationtest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- ImmediateGeneration Test *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  chisel3.internal.ChiselException: Connection between sink (SInt<32>(Wire in ImmediateGeneration)) and source (UInt<12>(OpResult in ImmediateGeneration)) failed @: Sink (SInt<32>(Wire in ImmediateGeneration)) and Source (UInt<12>(OpResult in ImmediateGeneration)) have different types.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SingleCycle.ImmediateGeneration.$anonfun$new$6(ImmediateGeneration.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.WhenContext.<init>(When.scala:124)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.WhenContext.elsewhen(When.scala:101)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.util.SwitchContext.is(Conditional.scala:39)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.util.SwitchContext.is(Conditional.scala:46)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SingleCycle.ImmediateGeneration.<init>(ImmediateGeneration.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SingleCycle.ImmediateGenerationtest.$anonfun$new$2(ImmediateGenerationtest.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 960 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	SingleCycle.ImmediateGenerationtest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 7 s, completed Feb 10, 2025, 1:00:10 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

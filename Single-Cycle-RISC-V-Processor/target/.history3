@@ -71,3 +71,15 @@
 1738926601517:testOnly SingleCycle.InstructionMemorytest
 1738930933031:testOnly SingleCycle.ProgramCountertest
 1738931076762:testOnly SingleCycle.InstructionMemorytest
+1739163413007:testOnly SingleCycle.RegisterFiletest
+1739164577810:testOnly SingleCycle.ImmediateGenerationtest
+1739166998205:sbt
+1739167128246:testOnly SingleCycle.ImmediateGenerationtest
+1739168604863:testOnly SingleCycle.InstructionMemorytest
+1739169093613:testOnly SingleCycle.ImmediateGenerationtest
+1739170329513:testOnly SingleCycle.BranchControltest
+1739171225355:testOnly SingleCycle.Alutest
+1739172933856:testOnly SingleCycle.InstructionMemorytest
+1739174264217:testOnly SingleCycle.ImmediateGenerationtest
+1739177211654:testOnly SingleCycle.Alutest
+1739180619157:testOnly SingleCycle.TypeDecodertest

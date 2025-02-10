@@ -1,0 +1,24 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/branchcontrol/BranchControl.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~BranchControl|BranchControl>io_br_taken",
+    "sources":[
+      "~BranchControl|BranchControl>io_branch",
+      "~BranchControl|BranchControl>io_fnct3",
+      "~BranchControl|BranchControl>io_arg_x",
+      "~BranchControl|BranchControl>io_arg_y"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/branchcontrol"
+  }
+]

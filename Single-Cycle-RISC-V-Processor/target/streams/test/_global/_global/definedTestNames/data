@@ -1,1 +1,1 @@
-["SingleCycle.Programcountertest","SingleCycle.InstructionMemorytest"]
+["SingleCycle.TypeDecodertest","SingleCycle.InstructionMemorytest","SingleCycle.BranchControltest","SingleCycle.Programcountertest","SingleCycle.RegisterFiletest","SingleCycle.ImmediateGenerationtest"]

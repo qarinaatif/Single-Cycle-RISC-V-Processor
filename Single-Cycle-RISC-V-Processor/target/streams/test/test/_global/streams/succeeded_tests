@@ -1,2 +1,6 @@
 #Successful Tests
-#Fri Feb 07 17:30:54 PKT 2025
+#Mon Feb 10 14:51:25 PKT 2025
+SingleCycle.InstructionMemorytest=1739173064102
+SingleCycle.BranchControltest=1739170338827
+SingleCycle.RegisterFiletest=1739163449799
+SingleCycle.ImmediateGenerationtest=1739176988479

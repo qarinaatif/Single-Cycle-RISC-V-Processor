@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly SingleCycle.ImmediateGenerationtest, Some(1f7bef40-4268-4798-a495-6c4ef815159f), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Single-Cycle-RISC-V-Processor/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Single-Cycle-RISC-V-Processor/target/scala-2.12/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/test/scala/SingleCycle/ImmediateGenerationtest.scala:8:5: inferred type arguments [SingleCycle.ImmediateGenerationtest] do not conform to method test's type parameter bounds [T <: chisel3.MultiIOModule][0m
+[0m[[0m[31merror[0m] [0m[0m    test(new ImmediateGenerationtest) { c =>[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/test/scala/SingleCycle/ImmediateGenerationtest.scala:8:10: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : SingleCycle.ImmediateGenerationtest[0m
+[0m[[0m[31merror[0m] [0m[0m required: T[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new ImmediateGenerationtest) { c =>[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 11 s, completed Feb 10, 2025, 10:53:21 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
