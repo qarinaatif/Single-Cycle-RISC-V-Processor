@@ -1,14 +1,7 @@
-[0m[[0m[0minfo[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Alu.scala:1:1: [0m
-[0m[[0m[0minfo[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
-[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
-[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
-[0m[[0m[0minfo[0m] [0m[0m    [0m
-[0m[[0m[0minfo[0m] [0m[0mpackage SingleCycle[0m
-[0m[[0m[0minfo[0m] [0m[0m^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Alucontrol.scala:1:1: [0m
-[0m[[0m[0minfo[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
-[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
-[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
-[0m[[0m[0minfo[0m] [0m[0m    [0m
-[0m[[0m[0minfo[0m] [0m[0mpackage SingleCycle[0m
-[0m[[0m[0minfo[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/TypeDecoder.scala:27:8: value io is not a member of chisel3.Bundle{val opcode: chisel3.UInt; val r_out: chisel3.UInt; val load_out: chisel3.UInt; val store_out: chisel3.UInt; val sb_out: chisel3.UInt; val i_out: chisel3.UInt; val jal_out: chisel3.UInt; val jalr_out: chisel3.UInt; val lui_out: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    io.io.r_out := io.r_out[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/TypeDecoder.scala:28:8: value io is not a member of chisel3.Bundle{val opcode: chisel3.UInt; val r_out: chisel3.UInt; val load_out: chisel3.UInt; val store_out: chisel3.UInt; val sb_out: chisel3.UInt; val i_out: chisel3.UInt; val jal_out: chisel3.UInt; val jalr_out: chisel3.UInt; val lui_out: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    io.io.sb_out := io.sb_out[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

@@ -1,27 +1,10 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SingleCycle.TypeDecodertest, org.scalatest.tools.Framework$$anon$1@14f07c3c, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SingleCycle.TypeDecodertest, org.scalatest.tools.Framework$$anon$1@5c676da7, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mTypeDecodertest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- TypeDecodertest *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  firrtl.passes.PassExceptions: firrtl.passes.CheckInitialization$RefNotInitializedException:  : [module TypeDecoder]  Reference io is not fully initialized.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m   : io.lui_out <= mux(_T, VOID, mux(_T_5, VOID, mux(_T_6, VOID, mux(_T_7, VOID, mux(_T_8, VOID, mux(_T_9, VOID, mux(_T_10, VOID, mux(_T_11, UInt<1>("h1"), VOID))))))))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  : [module TypeDecoder]  Reference io is not fully initialized.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m   : io.i_out <= mux(_T, VOID, mux(_T_5, UInt<1>("h1"), VOID))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  : [module TypeDecoder]  Reference io is not fully initialized.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m   : io.jalr_out <= mux(_T, VOID, mux(_T_5, VOID, mux(_T_6, UInt<1>("h1"), VOID)))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  : [module TypeDecoder]  Reference io is not fully initialized.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m   : io.sb_out <= mux(_T, VOID, mux(_T_5, VOID, mux(_T_6, VOID, mux(_T_7, VOID, mux(_T_8, VOID, mux(_T_9, UInt<1>("h1"), VOID))))))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  : [module TypeDecoder]  Reference io is not fully initialized.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m   : io.store_out <= mux(_T, VOID, mux(_T_5, VOID, mux(_T_6, VOID, mux(_T_7, UInt<1>("h1"), VOID))))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  : [module TypeDecoder]  Reference io is not fully initialized.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m   : io.jal_out <= mux(_T, VOID, mux(_T_5, VOID, mux(_T_6, VOID, mux(_T_7, VOID, mux(_T_8, VOID, mux(_T_9, VOID, mux(_T_10, UInt<1>("h1"), VOID)))))))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.CheckInitialization$RefNotInitializedException:  : [module TypeDecoder]  Reference io is not fully initialized.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m   : io.r_out <= mux(_T, VOID, mux(_T_5, VOID, mux(_T_6, VOID, mux(_T_7, VOID, mux(_T_8, UInt<1>("h1"), VOID)))))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31mfirrtl.passes.PassException: 7 errors detected![0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 5 seconds, 571 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- TypeDecodertest[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 5 seconds, 84 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	SingleCycle.TypeDecodertest[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SingleCycle.TypeDecodertest[0m
