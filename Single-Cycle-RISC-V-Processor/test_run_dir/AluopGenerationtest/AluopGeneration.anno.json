@@ -1,0 +1,23 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/AluopGenerationtest/AluopGeneration.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~AluopGeneration|AluopGeneration>io_aluop",
+    "sources":[
+      "~AluopGeneration|AluopGeneration>io_opcode",
+      "~AluopGeneration|AluopGeneration>io_func3",
+      "~AluopGeneration|AluopGeneration>io_func7"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/AluopGenerationtest"
+  }
+]

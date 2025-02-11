@@ -1,19 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/InstructionDecoder.scala:23:12: value out is not a member of chisel3.Bundle{val instruction: chisel3.UInt; val opcode: chisel3.UInt; val rd: chisel3.UInt; val func7: chisel3.UInt; val func3: chisel3.UInt; val rs1: chisel3.UInt; val rs2: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        io.out.opcode := opcode[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/InstructionDecoder.scala:24:12: value out is not a member of chisel3.Bundle{val instruction: chisel3.UInt; val opcode: chisel3.UInt; val rd: chisel3.UInt; val func7: chisel3.UInt; val func3: chisel3.UInt; val rs1: chisel3.UInt; val rs2: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        io.out.rd := rd[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/InstructionDecoder.scala:25:12: value out is not a member of chisel3.Bundle{val instruction: chisel3.UInt; val opcode: chisel3.UInt; val rd: chisel3.UInt; val func7: chisel3.UInt; val func3: chisel3.UInt; val rs1: chisel3.UInt; val rs2: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        io.out.func7 := func7[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/InstructionDecoder.scala:26:12: value out is not a member of chisel3.Bundle{val instruction: chisel3.UInt; val opcode: chisel3.UInt; val rd: chisel3.UInt; val func7: chisel3.UInt; val func3: chisel3.UInt; val rs1: chisel3.UInt; val rs2: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        io.out.func3 := func3[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/InstructionDecoder.scala:27:12: value out is not a member of chisel3.Bundle{val instruction: chisel3.UInt; val opcode: chisel3.UInt; val rd: chisel3.UInt; val func7: chisel3.UInt; val func3: chisel3.UInt; val rs1: chisel3.UInt; val rs2: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        io.out.rs1 := rs1[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/InstructionDecoder.scala:28:12: value out is not a member of chisel3.Bundle{val instruction: chisel3.UInt; val opcode: chisel3.UInt; val rd: chisel3.UInt; val func7: chisel3.UInt; val func3: chisel3.UInt; val rs1: chisel3.UInt; val rs2: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        io.out.rs2 := rs2[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Alucontrol.scala:1:1: [0m
+[0m[[0m[0minfo[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
+[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
+[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
+[0m[[0m[0minfo[0m] [0m[0m    [0m
+[0m[[0m[0minfo[0m] [0m[0mpackage SingleCycle[0m
+[0m[[0m[0minfo[0m] [0m[0m^[0m
