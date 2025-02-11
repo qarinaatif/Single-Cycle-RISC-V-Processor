@@ -83,3 +83,4 @@
 1739174264217:testOnly SingleCycle.ImmediateGenerationtest
 1739177211654:testOnly SingleCycle.Alutest
 1739180619157:testOnly SingleCycle.TypeDecodertest
+1739186801528:testOnly SingleCycle.InstructionDecodertest

@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly SingleCycle.InstructionDecodertest, Some(ea240b95-735a-41ac-9a2c-d46aeda551ca), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInstructionDecodertest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- InstructionDecoder Test *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  chisel3.internal.ChiselException: Invalid base 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.internal.throwException$.apply(Error.scala:155)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.internal.Builder$.error(Builder.scala:616)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.package$fromStringToLiteral.parse(package.scala:93)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.package$fromStringToLiteral.asUInt(package.scala:79)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.package$fromStringToLiteral.U(package.scala:71)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SingleCycle.InstructionDecodertest.$anonfun$new$3(InstructionDecodertest.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SingleCycle.InstructionDecodertest.$anonfun$new$3$adapted(InstructionDecodertest.scala:9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.backends.treadle.TreadleBackend.$anonfun$run$1(TreadleBackend.scala:152)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.internal.ThreadedBackend$TesterThread$$anon$1.$anonfun$run$1(ThreadedBackend.scala:507)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chiseltest.backends.treadle.TreadleBackend.doTimescope(TreadleBackend.scala:109)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 8 seconds, 29 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	SingleCycle.InstructionDecodertest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 34 s, completed Feb 10, 2025, 4:30:13 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
