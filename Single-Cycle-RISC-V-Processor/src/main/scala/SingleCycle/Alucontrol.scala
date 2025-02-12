@@ -1,48 +1,50 @@
 package SingleCycle
 import chisel3._
 import chisel3.util._
-/*
+
 class Alucontrol extends Module {
     val io = IO(new Bundle{
-        val aluop = Input(UInt(3.W))
-        val func7 = Input(UInt(3.W))
+        val aluop = Input(UInt(2.W))
+        val opcode = Input(UInt(7.W))
+        val func7 = Input(UInt(7.W))
         val func3 = Input(UInt(3.W))
-        val opcode = Input(UInt(6.W))
-        val output = Output(UInt(32.W))
+        val aluctrl = Output(UInt(6.W))
     })
 
-    io.Output := 0.U
+    io.aluctrl := 0.U 
 
-    switch(io.aluop) {
-        is("b000".U) {
-            io.Output := "b100000".U }
-        is("b001".U) {
-            io.Output := "b100010".U }
-        is("b010".U) {
-            io.Output := "b100100".U }
-        is("b011".U) {
-            io.Output := "b100101".U }
-        is("b100".U) {
-            io.Output := "b100110".U }
-        is("b101".U) {
-            io.Output := "b100111".U }
-        is("b110".U) {
-            when(io.func3 === "b000".U) { io.Output := "b100000".U } 
-            .elsewhen(io.func3 === "b001".U) { io.Output := "b100010".U }
-            .elsewhen(io.func3 === "b010".U) { io.Output := "b100100".U } 
-            .elsewhen(io.func3 === "b011".U) { io.Output := "b100101".U } 
-            .elsewhen(io.func3 === "b100".U) { io.Output := "b100110".U } 
-            .elsewhen(io.func3 === "b101".U) { io.Output := "b100111".U }
-            .elsewhen(io.func3 === "b110".U) { io.Output := "b101010".U }
-            .elsewhen(io.func3 === "b111".U) { io.Output := "b101011".U }
+    when(io.aluop === 0.U){ io.aluctrl := "b000000".U} //0
+    .elsewhen(io.aluop === 1.U){ io.aluctrl := "b111111".U}
+    .elsewhen(io.aluop === 2.U){ 
+        when ( io.opcode === "b0110011".U){    
+            switch(io.func3) {
+                is("b000".U) { 
+                    when( io.func7 === "b0000000".U){io.aluctrl := "b000000".U} // ADD 0
+                    .elsewhen( io.func7 === "b0100000".U){io.aluctrl := "b000001".U}} // SUB 1
+                is("b001".U) { io.aluctrl := "b000010".U } // SLL 2
+                is("b111".U) { io.aluctrl := "b000011".U } // AND 3
+                is("b110".U) { io.aluctrl := "b000100".U } // OR 4
+                is("b100".U) { io.aluctrl := "b000101".U } // XOR 5
+                is("b101".U) { 
+                    when( io.func7 === "b0000000".U){io.aluctrl := "b0000110".U} // SRL 6
+                    .elsewhen( io.func7 === "b001000".U){io.aluctrl := "b000111".U}} // SRA 7
+                is("b010".U) { io.aluctrl := "b001000".U } // SLT 8
+                is("b011".U) { io.aluctrl := "b001001".U } // SLTU 9
+            }
         }
-        is("b111".U) {
-            when(io.func7 === "b000".U) { io.Output := "b100000".U } 
-            .elsewhen(io.func7 === "b010".U) { io.Output := "b100100".U } 
-            .elsewhen(io.func7 === "b100".U) { io.Output := "b100110".U } 
-            .elsewhen(io.func7 === "b110".U) { io.Output := "b101010".U } 
-            .otherwise { io.Output := "b100010".U }
+        .elsewhen ( io.opcode === "b0010011".U){    
+            switch(io.func3) {
+                is("b000".U) { io.aluctrl := "b000000".U } // ADDI 0
+                is("b001".U) { when( io.func7 === "b0000000".U){io.aluctrl := "b000010".U}} // SLLI 2
+                is("b010".U) { io.aluctrl := "b001000".U } // SLTI 8
+                is("b011".U) { io.aluctrl := "b001001".U } // SLTIU 9
+                is("b100".U) { io.aluctrl := "b000101".U } // XORI 5
+                is("b101".U) { 
+                    when( io.func7 === "b0000000".U){io.aluctrl := "b0000110".U} // SRLI 6
+                    .elsewhen( io.func7 === "b0100000".U){io.aluctrl := "b000111".U}} // SRAI 7
+                is("b110".U) { io.aluctrl := "b000100".U } // ORI 4
+                is("b111".U) { io.aluctrl := "b000011".U } // ANDI 3
+            }
         }
     }
-}
-*/
+} 

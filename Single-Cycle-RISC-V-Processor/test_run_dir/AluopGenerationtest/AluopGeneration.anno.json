@@ -7,9 +7,7 @@
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~AluopGeneration|AluopGeneration>io_aluop",
     "sources":[
-      "~AluopGeneration|AluopGeneration>io_opcode",
-      "~AluopGeneration|AluopGeneration>io_func3",
-      "~AluopGeneration|AluopGeneration>io_func7"
+      "~AluopGeneration|AluopGeneration>io_opcode"
     ]
   },
   {
