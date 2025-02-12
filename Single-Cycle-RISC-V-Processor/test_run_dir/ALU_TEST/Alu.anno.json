@@ -1,0 +1,33 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/ALU_TEST/Alu.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Alu|Alu>io_aluout",
+    "sources":[
+      "~Alu|Alu>io_aluctrl",
+      "~Alu|Alu>io_op1",
+      "~Alu|Alu>io_op2"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Alu|Alu>io_zero",
+    "sources":[
+      "~Alu|Alu>io_aluout",
+      "~Alu|Alu>io_aluctrl",
+      "~Alu|Alu>io_op1",
+      "~Alu|Alu>io_op2"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/ALU_TEST"
+  }
+]
