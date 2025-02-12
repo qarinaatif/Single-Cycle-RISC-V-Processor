@@ -13,8 +13,8 @@ class Alucontrol extends Module {
 
     io.aluctrl := 0.U 
 
-    when(io.aluop === 0.U){ io.aluctrl := "b000000".U} //0
-    .elsewhen(io.aluop === 1.U){ io.aluctrl := "b111111".U}
+    when(io.aluop === 0.U){ io.aluctrl := "b000000".U} // load store 0
+    .elsewhen(io.aluop === 1.U){ io.aluctrl := "b111111".U} //branch
     .elsewhen(io.aluop === 2.U){ 
         when ( io.opcode === "b0110011".U){    
             switch(io.func3) {
