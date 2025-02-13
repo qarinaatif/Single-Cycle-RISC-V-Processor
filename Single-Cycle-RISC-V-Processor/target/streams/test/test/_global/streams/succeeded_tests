@@ -1,11 +1,13 @@
 #Successful Tests
-#Wed Feb 12 10:43:40 PKT 2025
+#Thu Feb 13 15:47:31 PKT 2025
 SingleCycle.InstructionDecodertest=1739265101501
-SingleCycle.Alutest=1739339020546
+SingleCycle.Alutest=1739424788754
+SingleCycle.SingleCycletest=1739443651540
 SingleCycle.InstructionMemorytest=1739173064102
 SingleCycle.Alucontroltest=1739338300827
 SingleCycle.BranchControltest=1739170338827
 SingleCycle.RegisterFiletest=1739163449799
 SingleCycle.ImmediateGenerationtest=1739176988479
 SingleCycle.TypeDecodertest=1739185455172
+SingleCycle.Datamemorytest=1739348026373
 SingleCycle.AluopGenerationtest=1739337371234

@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/test/scala/SingleCycle/Alutest.scala:10:14: value alucotrol is not a member of chisel3.Bundle{val op1: chisel3.UInt; val op2: chisel3.UInt; val aluctrl: chisel3.UInt; val aluout: chisel3.UInt; val zero: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        c.io.alucotrol.poke ( "b0000".U )[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/test/scala/SingleCycle/SingleCycletest.scala:8:14: not found: type SingleCycle[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new SingleCycle) { c =>[0m
 [0m[[0m[31merror[0m] [0m[0m             ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

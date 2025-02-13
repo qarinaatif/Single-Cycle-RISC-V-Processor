@@ -87,3 +87,12 @@
 1739265113587:testOnly SingleCycle.AluopGenerationtest
 1739338093958:testOnly SingleCycle.Alucontroltest
 1739338524972:testOnly SingleCycle.Alutest
+1739341951278:testOnly SingleCycle.AluopGenerationtest
+1739342020870:testOnly SingleCycle.Controlunittest
+1739346904635:testOnly SingleCycle.Datamemorytest
+1739357729268:testOnly SingleCycle.SingleCycletest
+1739424477453:testOnly SingleCycle.Alutest
+1739424793380:testOnly SingleCycle.SingleCycletest
+1739428235354:testOnly SingleCycle.SingleCycletest.Dwritevcd
+1739428244327:testOnly SingleCycle.SingleCycletest
+1739428314782:testOnly SingleCycle.SingleCycletest -- -DwriteVcd=1
