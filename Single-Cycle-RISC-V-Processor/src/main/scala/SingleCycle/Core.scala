@@ -4,46 +4,43 @@ import chisel3.util._
 import chisel3.util.experimental.loadMemoryFromFile
 import scala.io.Source
 
-class SingleCycle extends Module{
+class Core extends Module{
     val io = IO(new Bundle{
-        val Output1 = Output(UInt(32.W))
-        val datamemOut = Output(SInt(32.W))
+        val PC = Output(UInt(32.W))
+        val Instruction = Output(UInt(32.W))
+        val Datamemoryout = Output(SInt(32.W))
         val Address = Output(UInt(24.W))
-        val write = Output(UInt(1.W))
+        val WriteData = Output(UInt(32.W.W))
     })
     val pc_module = Module(new Programcounter)
     val insmemory_module = Module(new InstructionMemory("src/test/scala/SingleCycle/instructionmemory.txt"))
-    val immgen_module = Module(new ImmediateGeneration)
     val isntdecoder_module = Module(new InstructionDecoder)
     val typeDecoder_module =Module(new TypeDecoder)
+    val immgen_module = Module(new ImmediateGeneration)
     val regfile_module = Module(new RegisterFile)
-    val aluopgen_module = Module(new AluopGeneration)
+    val controldecoder_module = Module(new ControlDecoder)
     val alucontrol_module = Module(new Alucontrol)
     val alu_module = Module(new Alu)
+    val Branchcontrol_module = Module(new Branchcontrol)
+    val Branch_module = Module(new Branch)
     val datamemory_module = Module(new Datamemory)
+    val jalr_module = Module(new jalr)
 
 
     //Fetch 
-    val a = typeDecoder_module.io.sb_out & alu_module.io.zero
-    val b = pc_module.io.out + immgen_module.io.immd_se.asSInt
-
-    pc_module.io.in := MuxLookup (a, 0.S, Array(
+     pc_module.io.in := MuxLookup (a, 0.S, Array(
         (0.U) -> pc_module.io.pc4,
         (1.U) -> b))
 
     insmemory_module.io.readadress := pc_module.io.out(25,2)
+
     //Decode
     isntdecoder_module.io.instruction := insmemory_module.io.readdata
     immgen_module.io.instruction := insmemory_module.io.readdata
-
     typeDecoder_module.io.opcode := isntdecoder_module.io.opcode 
+    controldecoder_module.io.opcode := isntdecoder_module.io.opcode 
 
-    aluopgen_module.io.opcode := isntdecoder_module.io.opcode
-
-
-    val regWrite = typeDecoder_module.io.r_out | typeDecoder_module.io.i_out | typeDecoder_module.io.jal_out | typeDecoder_module.io.jalr_out | typeDecoder_module.io.lui_out | typeDecoder_module.io.load_out 
-
-    regfile_module.io.regWrite := regWrite
+    regfile_module.io.regWrite := controldecoder_module.io.RegWrite
     regfile_module.io.rs1 := isntdecoder_module.io.rs1
     regfile_module.io.rs2 := isntdecoder_module.io.rs2
     regfile_module.io.rd := isntdecoder_module.io.rd
@@ -51,17 +48,18 @@ class SingleCycle extends Module{
         (0.U) -> alu_module.io.aluout,
         (1.U) -> datamemory_module.io.memout.asUInt  
     ) )
+
     //Execute
-    alucontrol_module.io.aluop := aluopgen_module.io.aluop
-    alucontrol_module.io.opcode := isntdecoder_module.io.opcode
+    alucontrol_module.io.Aluop := controldecoder_module.io.Aluop
     alucontrol_module.io.func7 := isntdecoder_module.io.func7
     alucontrol_module.io.func3 := isntdecoder_module.io.func3
 
-    alu_module.io.op1 := regfile_module.io.writeregester1
+    alu_module.io.op1 := regfile_module.io.readData1
     alu_module.io.op2 := MuxLookup (typeDecoder_module.io.i_out, 0.S, Array(
-        (0.U) -> regfile_module.io.writeregester2,
-        (1.U) -> immgen_module.io.immd_se))
-    alu_module.io.aluctrl := alucontrol_module.io.aluctrl
+        (0.U) -> regfile_module.io.readData2,
+        (1.U) -> immgen_module.io.imm_out))
+    alu_module.io.aluctrl := alucontrol_module.io.aluctrlimmd_se
+
     //Writeback
     val c = immgen_module.io.immd_se + regfile_module.io.writeregester1
     val d = c(23,0)

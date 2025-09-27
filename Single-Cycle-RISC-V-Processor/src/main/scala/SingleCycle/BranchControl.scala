@@ -1,31 +1,42 @@
-package SingleCycle
+package pipeline
 import chisel3._
 import chisel3.util._
 
-class BranchControl extends Module {
-    val io = IO(new Bundle{
-        val fnct3 = Input ( UInt (3. W ) )
-        val branch = Input ( Bool () )
-        val arg_x = Input ( UInt (32. W ) )
-        val arg_y = Input ( UInt (32. W ) )
-        val br_taken = Output ( Bool () )
-        })
+class Branchcontrol extends Module {
+  val io = IO(new Bundle {
+    val RS1 = Input(SInt(32.W))
+    val RS2 = Input(SInt(32.W))
+    val func3 = Input(UInt(3.W))//
+    val branchctrl = Output(Bool())//
+  })
+  io.branchctrl := false.B
 
-        io.br_taken :=0.B
-        when(io.branch){
-            switch ( io.fnct3) {
-                is ("b0000".U){
-                    io.br_taken := (io.arg_x === io.arg_y)
-                } 
-                is ("b0001".U){
-                    io.br_taken := (io.arg_x =/= io.arg_y)
-                } 
-                is ("b0010".U){
-                    io.br_taken := (io.arg_x < io.arg_y)
-                } 
-                is ("b0100".U){
-                    io.br_taken := (io.arg_x >= io.arg_y)
-            } 
+  when(io.func3 === "b000".U) {
+    when(io.RS1 === io.RS2) {
+      io.branchctrl := 1.B
+    }
+    }.elsewhen(io.func3 === "b001".U) {
+        when(io.RS1 =/= io.RS2) {
+            io.branchctrl := 1.B
         }
+    }.elsewhen(io.func3 === "b100".U) {
+        when(io.RS1 < io.RS2) {
+            io.branchctrl := 1.B
+        }
+    }.elsewhen(io.func3 === "b101".U) {
+        when(io.RS1 >= io.RS2) {
+            io.branchctrl := 1.B
+        }
+    }.elsewhen(io.func3 === "b110".U) {
+        when(io.RS1.asUInt < io.RS2.asUInt) {
+            io.branchctrl := 1.B
+        }
+    }.elsewhen(io.func3 === "b111".U) {
+        when(io.RS1.asUInt >= io.RS2.asUInt) {
+            io.branchctrl := 1.B
+        }
+    }.otherwise {
+        io.branchctrl := 0.B
+
     }
 }
