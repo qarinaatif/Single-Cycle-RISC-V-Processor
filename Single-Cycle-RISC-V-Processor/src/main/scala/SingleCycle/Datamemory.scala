@@ -14,7 +14,6 @@ class Datamemory extends Module {
     val memaddress = Input(UInt(24.W))    
     val ReadData = Output(UInt(32.W))
     val memout = Output(UInt(32.W))
-    val wmask = Output(UInt(4.W))
   })
 
   val mem = Mem(8192, Vec(4, UInt(8.W)))

@@ -21,7 +21,6 @@ class Core extends Module{
     val controldecoder_module = Module(new ControlDecoder)
     val alucontrol_module = Module(new Alucontrol)
     val alu_module = Module(new Alu)
-    val Branchcontrol_module = Module(new Branchcontrol)
     val Branch_module = Module(new Branch)
     val datamemory_module = Module(new Datamemory)
     val jalr_module = Module(new jalr)
@@ -58,24 +57,29 @@ class Core extends Module{
     alu_module.io.op2 := MuxLookup (typeDecoder_module.io.i_out, 0.S, Array(
         (0.U) -> regfile_module.io.readData2,
         (1.U) -> immgen_module.io.imm_out))
-    alu_module.io.aluctrl := alucontrol_module.io.aluctrlimmd_se
+    alu_module.io.aluctrl := alucontrol_module.io.aluctrl
 
-    //Writeback
-    val c = immgen_module.io.immd_se + regfile_module.io.writeregester1
-    val d = c(23,0)
-    val e = typeDecoder_module.io.load_out | typeDecoder_module.io.store_out
-    val address = MuxLookup(e, 0.U, Seq(
-    (0.U) -> 0.U,
-    (1.U) -> d
-    ))
+    Branch_module.io.arg_x := regfile_module.io.readData1
+    Branch_module.io.arg_y := regfile_module.io.readData2
+    Branch_module.io.func3 := isntdecoder_module.io.func3
+    Branch_module.io.branch := controldecoder_module.io.Branch
 
-    datamemory_module.io.memdata := regfile_module.io.writeregester2.asSInt
-    datamemory_module.io.memaddress := address
-    datamemory_module.io.memread := regWrite
-    datamemory_module.io.memwrite := typeDecoder_module.io.store_out
+    jalr_module.io.rs1 := isntdecoder_module.io.rs1
+	jalr_module.io.imme := immgen_module.io.imm_out
 
-    io.Output1 := alu_module.io.aluout
-    io.datamemOut := datamemory_module.io.memout
-    io.Address := address
-    io.write := regWrite
+    //Memory
+    datamemory_module.io.Alures :=  controldecoder_module.io.
+    datamemory_module.io.WriteData := regfile_module.io.readData2
+    datamemory_module.io.WriteEnable := controldecoder_module.io.MemWrite
+    datamemory_module.io.ReadEnable := controldecoder_module.io.MemRead
+    datamemory_module.io.func3 := isntdecoder_module.io.func3
+    datamemory_module.io.memaddress := alucontrol_module.io.aluout(23,0 )
+
+    
+    //Outputs
+    io.PC := 
+    io.Instruction := 
+    io.Datamemoryout := 
+    io.Address := 
+    io.WriteData := 
 }
