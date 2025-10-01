@@ -68,7 +68,7 @@ class Core extends Module{
 	jalr_module.io.imme := immgen_module.io.imm_out
 
     //Memory
-    datamemory_module.io.Alures :=  controldecoder_module.io.
+    datamemory_module.io.Alures :=  alucontrol_module.io.aluout
     datamemory_module.io.WriteData := regfile_module.io.readData2
     datamemory_module.io.WriteEnable := controldecoder_module.io.MemWrite
     datamemory_module.io.ReadEnable := controldecoder_module.io.MemRead
@@ -77,9 +77,9 @@ class Core extends Module{
 
     
     //Outputs
-    io.PC := 
-    io.Instruction := 
-    io.Datamemoryout := 
-    io.Address := 
-    io.WriteData := 
+    io.PC := pc_module.io.out(25,2)
+    io.Instruction := insmemory_module.io.readdata
+    io.Datamemoryout := datamemory_module.io.ReadData
+    io.Address := alucontrol_module.io.aluout(23,0 )
+    io.WriteData := regfile_module.io.readData2
 }
