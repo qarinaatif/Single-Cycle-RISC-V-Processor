@@ -27,7 +27,7 @@ class Core extends Module{
 
 
     //Fetch 
-     pc_module.io.in := MuxLookup (a, 0.S, Array(
+     pc_module.io.in := MuxLookup (, 0.S, Array(
         (0.U) -> pc_module.io.pc4,
         (1.U) -> b))
 
