@@ -96,3 +96,4 @@
 1739428235354:testOnly SingleCycle.SingleCycletest.Dwritevcd
 1739428244327:testOnly SingleCycle.SingleCycletest
 1739428314782:testOnly SingleCycle.SingleCycletest -- -DwriteVcd=1
+1770370341611:exit

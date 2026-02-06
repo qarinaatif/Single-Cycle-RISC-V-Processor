@@ -2,13 +2,13 @@ package pipeline
 import chisel3._
 import chisel3.util._
 
-class Branch extends Module {
+class Branch(XLEN: Int) extends Module {
   val io = IO(new Bundle {
-    val arg_x = Input(SInt(32.W))
-    val arg_y = Input(SInt(32.W))
+    val arg_x = Input(SInt(XLEN.W))
+    val arg_y = Input(SInt(XLEN.W))
     val func3 = Input(UInt(3.W))
-    val branch = Input(Bool())//
-    val br_taken= Output(Bool())//
+    val branch = Input(Bool())
+    val br_taken= Output(Bool())
   })
 
   io.br_taken := false.B
