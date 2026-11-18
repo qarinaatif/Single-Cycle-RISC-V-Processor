@@ -1,0 +1,15 @@
+# Tell GitHub Linguist to ignore generated/vendor/non-project files
+# so the language stats accurately reflect the Scala/Chisel source
+
+# Ignore generated FIRRTL output files from chiseltest
+test_run_dir/**        linguist-generated=true
+
+# Ignore compiled Scala class output
+target/**              linguist-generated=true
+
+# Ignore Jupyter notebook lab materials (backup labs)
+backup/**              linguist-documentation=true
+docs/**                linguist-documentation=true
+
+# Ignore JavaScript inside notebooks
+*.js                   linguist-vendored=true

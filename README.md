@@ -143,7 +143,3 @@ sbt "testOnly SingleCycle.RegisterFiletest"
 3. Run the simulator using `SingleCycletest.scala` to step through clock cycles and inspect internal signals.
 
 ---
-
-## License
-
-This project is open-source and available under the terms of the MIT License.
