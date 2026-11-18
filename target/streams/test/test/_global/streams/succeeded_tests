@@ -1,13 +1,14 @@
 #Successful Tests
-#Thu Feb 13 15:47:31 PKT 2025
-SingleCycle.InstructionDecodertest=1739265101501
-SingleCycle.Alutest=1739424788754
-SingleCycle.SingleCycletest=1739443651540
-SingleCycle.InstructionMemorytest=1739173064102
-SingleCycle.Alucontroltest=1739338300827
+#Wed Nov 18 13:19:16 PKT 2026
+SingleCycle.Alucontroltest=1794989955105
+SingleCycle.InstructionMemorytest=1794989955273
 SingleCycle.BranchControltest=1739170338827
-SingleCycle.RegisterFiletest=1739163449799
-SingleCycle.ImmediateGenerationtest=1739176988479
-SingleCycle.TypeDecodertest=1739185455172
-SingleCycle.Datamemorytest=1739348026373
+SingleCycle.TypeDecodertest=1794989953585
 SingleCycle.AluopGenerationtest=1739337371234
+SingleCycle.InstructionDecodertest=1794989955935
+SingleCycle.Alutest=1794989953585
+SingleCycle.SingleCycletest=1794989956468
+SingleCycle.ImmediateGenerationtest=1739176988479
+SingleCycle.RegisterFiletest=1794989955819
+SingleCycle.Datamemorytest=1794989953585
+SingleCycle.Programcountertest=1794989953585

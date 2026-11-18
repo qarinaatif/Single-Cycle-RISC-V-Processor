@@ -1,0 +1,65 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly SingleCycle.SingleCycletest, Some(4bb0a57c-db67-42d9-9bdd-6246321d024f), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 13 Scala sources to /home/qarinaatif/Single-Cycle-RISC-V-Processor/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:13:42: value W is not a member of chisel3.internal.firrtl.Width[0m
+[0m[[0m[31merror[0m] [0m[0m        val WriteData = Output(UInt(32.W.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:15:28: not enough arguments for constructor Programcounter: (XLEN: Int)SingleCycle.Programcounter.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter XLEN.[0m
+[0m[[0m[31merror[0m] [0m[0m    val pc_module = Module(new Programcounter)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:19:36: not found: type ImmediateGeneration[0m
+[0m[[0m[31merror[0m] [0m[0m    val immgen_module = Module(new ImmediateGeneration)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:20:33: not enough arguments for constructor RegisterFile: (XLEN: Int)SingleCycle.RegisterFile.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter XLEN.[0m
+[0m[[0m[31merror[0m] [0m[0m    val regfile_module = Module(new RegisterFile)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:21:44: not found: type ControlDecoder[0m
+[0m[[0m[31merror[0m] [0m[0m    val controldecoder_module = Module(new ControlDecoder)[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:22:40: not found: type Alucontrol[0m
+[0m[[0m[31merror[0m] [0m[0m    val alucontrol_module = Module(new Alucontrol)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:23:33: not found: type Alu[0m
+[0m[[0m[31merror[0m] [0m[0m    val alu_module = Module(new Alu)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:24:36: not found: type Branch[0m
+[0m[[0m[31merror[0m] [0m[0m    val Branch_module = Module(new Branch)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:26:34: not found: type jalr[0m
+[0m[[0m[31merror[0m] [0m[0m    val jalr_module = Module(new jalr)[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Datamemory.scala:24:7: not found: value InitFile[0m
+[0m[[0m[31merror[0m] [0m[0m  if (InitFile.isDefined) {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Datamemory.scala:25:29: not found: value InitFile[0m
+[0m[[0m[31merror[0m] [0m[0mError occurred in an application involving default arguments.[0m
+[0m[[0m[31merror[0m] [0m[0m    loadMemoryFromFile(mem, InitFile.get)[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Datamemory.scala:35:6: value wmask is not a member of chisel3.Bundle{val Alures: chisel3.UInt; val WriteData: chisel3.UInt; val WriteEnable: chisel3.Bool; val ReadEnable: chisel3.Bool; val func3: chisel3.UInt; val memaddress: chisel3.UInt; val ReadData: chisel3.UInt; val memout: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m  io.wmask := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Datamemory.scala:39:12: value wmask is not a member of chisel3.Bundle{val Alures: chisel3.UInt; val WriteData: chisel3.UInt; val WriteEnable: chisel3.Bool; val ReadEnable: chisel3.Bool; val func3: chisel3.UInt; val memaddress: chisel3.UInt; val ReadData: chisel3.UInt; val memout: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        io.wmask := (1.U << offset).asUInt[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Datamemory.scala:42:12: value wmask is not a member of chisel3.Bundle{val Alures: chisel3.UInt; val WriteData: chisel3.UInt; val WriteEnable: chisel3.Bool; val ReadEnable: chisel3.Bool; val func3: chisel3.UInt; val memaddress: chisel3.UInt; val ReadData: chisel3.UInt; val memout: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        io.wmask := ("b0011".U << offset).asUInt[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Datamemory.scala:45:12: value wmask is not a member of chisel3.Bundle{val Alures: chisel3.UInt; val WriteData: chisel3.UInt; val WriteEnable: chisel3.Bool; val ReadEnable: chisel3.Bool; val func3: chisel3.UInt; val memaddress: chisel3.UInt; val ReadData: chisel3.UInt; val memout: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        io.wmask := "b1111".U[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Datamemory.scala:48:40: value wmask is not a member of chisel3.Bundle{val Alures: chisel3.UInt; val WriteData: chisel3.UInt; val WriteEnable: chisel3.Bool; val ReadEnable: chisel3.Bool; val func3: chisel3.UInt; val memaddress: chisel3.UInt; val ReadData: chisel3.UInt; val memout: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m    mem.write(io.memaddress, wdata, io.wmask.asBools)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/InstructionMemory.scala:14:41: value get is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0mError occurred in an application involving default arguments.[0m
+[0m[[0m[31merror[0m] [0m[0m        loadMemoryFromFile(mem,initFile.get)[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m17 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Feb 6, 2026, 4:00:45 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

@@ -1,0 +1,42 @@
+[debug] Running TaskDef(SingleCycle.Datamemorytest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[debug] Running TaskDef(SingleCycle.Alutest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[debug] Running TaskDef(SingleCycle.TypeDecodertest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[debug] Running TaskDef(SingleCycle.Programcountertest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[info] Datamemorytest:
+[info] TypeDecodertest:
+[info] - TypeDecodertest
+[info] Alutest:
+[info] - ALU TEST
+[info] Programcountertest:
+[info] - Programcountertest
+[info] - Datamemorytest
+[debug] Running TaskDef(SingleCycle.RegisterFiletest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[debug] Running TaskDef(SingleCycle.InstructionMemorytest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[debug] Running TaskDef(SingleCycle.Alucontroltest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[debug] Running TaskDef(SingleCycle.SingleCycletest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[debug] Running TaskDef(SingleCycle.InstructionDecodertest, org.scalatest.tools.Framework$$anon$1@520a0397, false, [SuiteSelector])
+[info] InstructionMemorytest:
+[info] - InstructionMemorytest Test
+[info] Alucontroltest:
+[info] - Alucontroltest
+[info] RegisterFiletest:
+[info] - RegisterFiletest
+[info] InstructionDecodertest:
+[info] - InstructionDecoder Test
+[info] SingleCycletest:
+[info] - SingleCycletest
+[info] Run completed in 7 seconds, 367 milliseconds.
+[info] Total number of tests run: 9
+[info] Suites: completed 9, aborted 0
+[info] Tests: succeeded 9, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[debug] Passed tests:
+[debug] 	SingleCycle.TypeDecodertest
+[debug] 	SingleCycle.Alucontroltest
+[debug] 	SingleCycle.InstructionMemorytest
+[debug] 	SingleCycle.Programcountertest
+[debug] 	SingleCycle.RegisterFiletest
+[debug] 	SingleCycle.SingleCycletest
+[debug] 	SingleCycle.Datamemorytest
+[debug] 	SingleCycle.Alutest
+[debug] 	SingleCycle.InstructionDecodertest

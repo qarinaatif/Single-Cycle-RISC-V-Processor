@@ -3,7 +3,7 @@ circuit TypeDecoder :
   module TypeDecoder : 
     input clock : Clock
     input reset : UInt<1>
-    output io : {flip opcode : UInt<6>, r_out : UInt<1>, load_out : UInt<1>, store_out : UInt<1>, sb_out : UInt<1>, i_out : UInt<1>, jal_out : UInt<1>, jalr_out : UInt<1>, lui_out : UInt<1>}
+    output io : {flip opcode : UInt<7>, r_out : UInt<1>, load_out : UInt<1>, store_out : UInt<1>, sb_out : UInt<1>, i_out : UInt<1>, jal_out : UInt<1>, jalr_out : UInt<1>, lui_out : UInt<1>}
     
     io.load_out <= UInt<1>("h00") @[TypeDecoder.scala 18:17]
     io.r_out <= UInt<1>("h00") @[TypeDecoder.scala 19:14]
@@ -17,15 +17,15 @@ circuit TypeDecoder :
     when _T : @[TypeDecoder.scala 27:37]
       io.load_out <= UInt<1>("h01") @[TypeDecoder.scala 28:21]
       skip @[TypeDecoder.scala 27:37]
-    else : @[TypeDecoder.scala 29:102]
+    else : @[TypeDecoder.scala 29:104]
       node _T_1 = eq(io.opcode, UInt<4>("h0f")) @[TypeDecoder.scala 29:26]
-      node _T_2 = eq(io.opcode, UInt<5>("h013")) @[TypeDecoder.scala 29:55]
+      node _T_2 = eq(io.opcode, UInt<5>("h013")) @[TypeDecoder.scala 29:56]
       node _T_3 = or(_T_1, _T_2) @[TypeDecoder.scala 29:43]
-      node _T_4 = eq(io.opcode, UInt<7>("h073")) @[TypeDecoder.scala 29:84]
-      node _T_5 = or(_T_3, _T_4) @[TypeDecoder.scala 29:72]
-      when _T_5 : @[TypeDecoder.scala 29:102]
+      node _T_4 = eq(io.opcode, UInt<7>("h073")) @[TypeDecoder.scala 29:86]
+      node _T_5 = or(_T_3, _T_4) @[TypeDecoder.scala 29:73]
+      when _T_5 : @[TypeDecoder.scala 29:104]
         io.i_out <= UInt<1>("h01") @[TypeDecoder.scala 30:18]
-        skip @[TypeDecoder.scala 29:102]
+        skip @[TypeDecoder.scala 29:104]
       else : @[TypeDecoder.scala 31:44]
         node _T_6 = eq(io.opcode, UInt<7>("h067")) @[TypeDecoder.scala 31:26]
         when _T_6 : @[TypeDecoder.scala 31:44]

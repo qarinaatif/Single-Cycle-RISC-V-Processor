@@ -1,0 +1,28 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/RegisterFiletest/RegisterFile.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~RegisterFile|RegisterFile>io_readData2",
+    "sources":[
+      "~RegisterFile|RegisterFile>io_rs2"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~RegisterFile|RegisterFile>io_readData1",
+    "sources":[
+      "~RegisterFile|RegisterFile>io_rs1"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/RegisterFiletest"
+  }
+]

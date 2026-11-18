@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/SingleCycle.scala:81:4: value datamemOut1 is not a member of chisel3.Bundle{val Output1: chisel3.UInt; val datamemOut: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0mio.datamemOut1 := datamemory_module.io.memout[0m
-[0m[[0m[31merror[0m] [0m[0m   ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[error] /home/qarinaatif/Single-Cycle-RISC-V-Processor/src/main/scala/SingleCycle/Core.scala:27:65: no arguments allowed for nullary macro method asUInt: ()chisel3.UInt
+[error]     insmemory_module.io.readadress := (pc_module.io.out.asUInt)(25, 2)
+[error]                                                                 ^
+[error] one error found

@@ -2,7 +2,7 @@ circuit TypeDecoder :
   module TypeDecoder :
     input clock : Clock
     input reset : UInt<1>
-    input io_opcode : UInt<6>
+    input io_opcode : UInt<7>
     output io_r_out : UInt<1>
     output io_load_out : UInt<1>
     output io_store_out : UInt<1>
@@ -14,10 +14,10 @@ circuit TypeDecoder :
 
     node _T = eq(io_opcode, UInt<2>("h3")) @[TypeDecoder.scala 27:20]
     node _T_1 = eq(io_opcode, UInt<4>("hf")) @[TypeDecoder.scala 29:26]
-    node _T_2 = eq(io_opcode, UInt<5>("h13")) @[TypeDecoder.scala 29:55]
+    node _T_2 = eq(io_opcode, UInt<5>("h13")) @[TypeDecoder.scala 29:56]
     node _T_3 = or(_T_1, _T_2) @[TypeDecoder.scala 29:43]
-    node _T_4 = eq(io_opcode, UInt<7>("h73")) @[TypeDecoder.scala 29:84]
-    node _T_5 = or(_T_3, _T_4) @[TypeDecoder.scala 29:72]
+    node _T_4 = eq(io_opcode, UInt<7>("h73")) @[TypeDecoder.scala 29:86]
+    node _T_5 = or(_T_3, _T_4) @[TypeDecoder.scala 29:73]
     node _T_6 = eq(io_opcode, UInt<7>("h67")) @[TypeDecoder.scala 31:26]
     node _T_7 = eq(io_opcode, UInt<6>("h23")) @[TypeDecoder.scala 33:26]
     node _T_8 = eq(io_opcode, UInt<6>("h33")) @[TypeDecoder.scala 35:26]
@@ -45,13 +45,13 @@ circuit TypeDecoder :
     node _GEN_18 = mux(_T_6, UInt<1>("h0"), _GEN_12) @[TypeDecoder.scala 31:44 TypeDecoder.scala 20:15]
     node _GEN_19 = mux(_T_6, UInt<1>("h0"), _GEN_13) @[TypeDecoder.scala 31:44 TypeDecoder.scala 23:16]
     node _GEN_20 = mux(_T_6, UInt<1>("h0"), _GEN_14) @[TypeDecoder.scala 31:44 TypeDecoder.scala 24:16]
-    node _GEN_21 = mux(_T_5, UInt<1>("h1"), UInt<1>("h0")) @[TypeDecoder.scala 29:102 TypeDecoder.scala 30:18 TypeDecoder.scala 22:14]
-    node _GEN_22 = mux(_T_5, UInt<1>("h0"), _GEN_15) @[TypeDecoder.scala 29:102 TypeDecoder.scala 25:17]
-    node _GEN_23 = mux(_T_5, UInt<1>("h0"), _GEN_16) @[TypeDecoder.scala 29:102 TypeDecoder.scala 21:18]
-    node _GEN_24 = mux(_T_5, UInt<1>("h0"), _GEN_17) @[TypeDecoder.scala 29:102 TypeDecoder.scala 19:14]
-    node _GEN_25 = mux(_T_5, UInt<1>("h0"), _GEN_18) @[TypeDecoder.scala 29:102 TypeDecoder.scala 20:15]
-    node _GEN_26 = mux(_T_5, UInt<1>("h0"), _GEN_19) @[TypeDecoder.scala 29:102 TypeDecoder.scala 23:16]
-    node _GEN_27 = mux(_T_5, UInt<1>("h0"), _GEN_20) @[TypeDecoder.scala 29:102 TypeDecoder.scala 24:16]
+    node _GEN_21 = mux(_T_5, UInt<1>("h1"), UInt<1>("h0")) @[TypeDecoder.scala 29:104 TypeDecoder.scala 30:18 TypeDecoder.scala 22:14]
+    node _GEN_22 = mux(_T_5, UInt<1>("h0"), _GEN_15) @[TypeDecoder.scala 29:104 TypeDecoder.scala 25:17]
+    node _GEN_23 = mux(_T_5, UInt<1>("h0"), _GEN_16) @[TypeDecoder.scala 29:104 TypeDecoder.scala 21:18]
+    node _GEN_24 = mux(_T_5, UInt<1>("h0"), _GEN_17) @[TypeDecoder.scala 29:104 TypeDecoder.scala 19:14]
+    node _GEN_25 = mux(_T_5, UInt<1>("h0"), _GEN_18) @[TypeDecoder.scala 29:104 TypeDecoder.scala 20:15]
+    node _GEN_26 = mux(_T_5, UInt<1>("h0"), _GEN_19) @[TypeDecoder.scala 29:104 TypeDecoder.scala 23:16]
+    node _GEN_27 = mux(_T_5, UInt<1>("h0"), _GEN_20) @[TypeDecoder.scala 29:104 TypeDecoder.scala 24:16]
     node _GEN_28 = mux(_T, UInt<1>("h1"), UInt<1>("h0")) @[TypeDecoder.scala 27:37 TypeDecoder.scala 28:21 TypeDecoder.scala 18:17]
     node _GEN_29 = mux(_T, UInt<1>("h0"), _GEN_21) @[TypeDecoder.scala 27:37 TypeDecoder.scala 22:14]
     node _GEN_30 = mux(_T, UInt<1>("h0"), _GEN_22) @[TypeDecoder.scala 27:37 TypeDecoder.scala 25:17]

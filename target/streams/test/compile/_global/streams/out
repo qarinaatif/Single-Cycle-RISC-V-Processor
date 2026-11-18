@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/Single-Cycle-RISC-V-Processor/src/test/scala/SingleCycle/SingleCycletest.scala:8:14: not found: type SingleCycle[0m
-[0m[[0m[31merror[0m] [0m[0m    test(new SingleCycle) { c =>[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/qarinaatif/Single-Cycle-RISC-V-Processor/src/test/scala/SingleCycle/Programcountertest.scala:10:31: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m required: chisel3.SInt[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.out.expect(0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

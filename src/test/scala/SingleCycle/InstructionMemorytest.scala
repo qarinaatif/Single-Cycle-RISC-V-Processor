@@ -9,6 +9,7 @@ class InstructionMemorytest extends FreeSpec with ChiselScalatestTester{
         test(new InstructionMemory("src/test/scala/SingleCycle/instructionmemory.txt")) { c =>
             c.io.readadress.poke(1.U)
             c.clock.step(1)
-            c.io.readdata.expect(20971795.U)
-    }}
+            c.io.readdata.expect("h00342023".U)
+        }
+    }
 }

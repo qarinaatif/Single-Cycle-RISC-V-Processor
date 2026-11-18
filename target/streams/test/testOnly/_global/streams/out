@@ -1,10 +1,18 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SingleCycle.SingleCycletest, org.scalatest.tools.Framework$$anon$1@776babdf, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SingleCycle.SingleCycletest, org.scalatest.tools.Framework$$anon$1@1d9b2d8f, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mSingleCycletest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- SingleCycletest[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 9 seconds, 253 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- SingleCycletest *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.ClassCastException: class chisel3.UInt cannot be cast to class chisel3.SInt (chisel3.UInt and chisel3.SInt are in unnamed module of loader sbt.internal.LayeredClassLoader @2bc02aed)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SingleCycle.Core.<init>(Core.scala:29)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at SingleCycle.SingleCycletest.$anonfun$new$2(SingleCycletest.scala:8)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 873 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	SingleCycle.SingleCycletest[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	SingleCycle.SingleCycletest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m

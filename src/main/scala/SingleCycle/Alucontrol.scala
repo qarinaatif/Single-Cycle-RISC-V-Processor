@@ -1,4 +1,4 @@
-package pipeline
+package SingleCycle
 import chisel3._
 import chisel3.util._
 
@@ -11,17 +11,19 @@ class Alucontrol extends Module {
     })
     io.aluctrl := 0.U 
 
-    when (io.Aluop === "b000".U){
-        io.aluctrl := Cat("b0".U,io.func7,io.func3)
-        }.elsewhen(io.Aluop === "b001".U){
-            io.aluctrl := Cat("b00".U,io.func3)
-        }.elsewhen(io.Aluop === "b101".U || io.Aluop === "b100".U){
-            io.aluctrl := "b00000".U
-        }.elsewhen(io.Aluop === "b011".U){
-            io.aluctrl := "b11111".U
-        }.elsewhen(io.Aluop === "b010".U){
-            io.aluctrl := Cat("b10".U,io.func3)
-        }.elsewhen(io.Aluop === "b110".U){
-            io.aluctrl := "b00000".U}     
+    when (io.Aluop === "b000".U || io.Aluop === "b010".U){
+        io.aluctrl := Cat("b0".U, io.func7(5), io.func3)
+    }.elsewhen(io.Aluop === "b001".U){
+        when(io.func3 === "b101".U){
+            io.aluctrl := Cat("b0".U, io.func7(5), io.func3)
+        }.otherwise {
+            io.aluctrl := Cat("b00".U, io.func3)
+        }
+    }.elsewhen(io.Aluop === "b101".U || io.Aluop === "b100".U){
+        io.aluctrl := "b00000".U
+    }.elsewhen(io.Aluop === "b011".U){
+        io.aluctrl := "b11111".U
+    }.elsewhen(io.Aluop === "b110".U){
+        io.aluctrl := "b00000".U
+    }     
 }
-

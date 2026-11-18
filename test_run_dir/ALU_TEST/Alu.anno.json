@@ -13,16 +13,6 @@
     ]
   },
   {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Alu|Alu>io_zero",
-    "sources":[
-      "~Alu|Alu>io_aluout",
-      "~Alu|Alu>io_aluctrl",
-      "~Alu|Alu>io_op1",
-      "~Alu|Alu>io_op2"
-    ]
-  },
-  {
     "class":"firrtl.EmitCircuitAnnotation",
     "emitter":"firrtl.LowFirrtlEmitter"
   },

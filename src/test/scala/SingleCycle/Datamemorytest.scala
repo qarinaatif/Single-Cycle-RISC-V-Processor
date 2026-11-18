@@ -1,29 +1,34 @@
 package SingleCycle
-import chisel3._
-import chisel3.util._
 import chiseltest._
+import chisel3._
 import org.scalatest._
 
-class Datamemorytest extends FreeSpec with ChiselScalatestTester{
-    "Datamemory Test" in {
-        test(new Datamemory) { c =>
-            c.io.memwrite.poke(0.B)
-            c.io.memread.poke(1.B)
-            c.io.memaddress.poke(1.U)
-            c.clock.step(1)
-            c.io.memout.expect(0.S)
+class Datamemorytest extends FreeSpec with ChiselScalatestTester {
+    "Datamemorytest" in {
+        test(new Datamemory()) { c =>
+            // Read from address 0 initially
+            c.io.WriteEnable.poke(0.B)
+            c.io.ReadEnable.poke(1.B)
+            c.io.memaddress.poke(0.U)
+            c.io.func3.poke("b010".U) // LW
+            c.clock.step()
+            c.io.memout.expect(0.U)
 
-            c.io.memwrite.poke(1.B)
-            c.io.memread.poke(0.B)
-            c.io.memaddress.poke(1.U)
-            c.io.memdata.poke(100101795.S)
-            c.clock.step(1)
-            c.io.memout.expect(0.S)
+            // Write 100101795 to address 0
+            c.io.WriteEnable.poke(1.B)
+            c.io.ReadEnable.poke(0.B)
+            c.io.WriteData.poke(100101795.U)
+            c.io.memaddress.poke(0.U)
+            c.io.func3.poke("b010".U) // SW
+            c.clock.step()
 
-            c.io.memwrite.poke(0.B)
-            c.io.memread.poke(1.B)
-            c.io.memaddress.poke(1.U)
-            c.clock.step(1)
-            c.io.memout.expect(100101795.S)
-    }}
+            // Read back from address 0
+            c.io.WriteEnable.poke(0.B)
+            c.io.ReadEnable.poke(1.B)
+            c.io.memaddress.poke(0.U)
+            c.io.func3.poke("b010".U) // LW
+            c.clock.step()
+            c.io.memout.expect(100101795.U)
+        }
+    }
 }

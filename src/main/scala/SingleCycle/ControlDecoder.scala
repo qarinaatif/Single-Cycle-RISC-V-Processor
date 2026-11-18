@@ -1,7 +1,6 @@
-package pipeline
+package SingleCycle
 import chisel3._
 import chisel3.util._
-import chisel3.experimental.ChiselEnum
 
 class ControlDecoder extends Module {
     val io = IO (new Bundle {
@@ -22,7 +21,7 @@ class ControlDecoder extends Module {
     io.Aluop := 7.U
    
     switch(io.opcode){
-        is("b0110011".U){   //r
+        is("b0110011".U){   // R-type
             io.MemWrite := 0.B
             io.MemRead := 0.B 
             io.Branch := 0.B
@@ -30,7 +29,7 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 0.B
             io.Aluop := "b000".U
         }
-        is("b0010011".U){ //i
+        is("b0010011".U){   // I-type
             io.MemWrite := 0.B
             io.MemRead := 0.B 
             io.Branch := 0.B
@@ -38,7 +37,7 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 0.B
             io.Aluop := "b001".U
         }
-        is ("b0100011".U){ //s
+        is("b0100011".U){   // S-type (Store)
             io.MemWrite := 1.B
             io.MemRead := 0.B 
             io.Branch := 0.B
@@ -46,7 +45,7 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 0.B
             io.Aluop := "b101".U
         }
-         is ("b0000011".U){ //l
+        is("b0000011".U){   // L-type (Load)
             io.MemWrite := 0.B
             io.MemRead := 1.B 
             io.Branch := 0.B
@@ -54,7 +53,7 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 1.B
             io.Aluop := "b100".U
         }
-         is("b1100011".U){ //b
+        is("b1100011".U){   // B-type (Branch)
             io.MemWrite := 0.B
             io.MemRead := 0.B 
             io.Branch := 1.B
@@ -62,7 +61,7 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 0.B
             io.Aluop := "b010".U
         }
-         is("b1101111".U){//jalr   
+        is("b1101111".U){   // JAL   
             io.MemWrite := 0.B
             io.MemRead := 0.B 
             io.Branch := 0.B
@@ -70,7 +69,7 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 0.B
             io.Aluop := "b011".U
         }
-         is("b1100111".U){//jal  
+        is("b1100111".U){   // JALR  
             io.MemWrite := 0.B
             io.MemRead := 0.B 
             io.Branch := 0.B
@@ -78,7 +77,7 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 0.B
             io.Aluop := "b011".U
         }
-        is("b0110111".U){ //lui  
+        is("b0110111".U){   // LUI  
             io.MemWrite := 0.B
             io.MemRead := 0.B 
             io.Branch := 0.B
@@ -86,13 +85,13 @@ class ControlDecoder extends Module {
             io.Mem2Reg := 0.B
             io.Aluop := "b110".U
         }
-        is("b0010111".U){ // AUIPC
+        is("b0010111".U){   // AUIPC
             io.MemWrite := 0.B
             io.MemRead := 0.B 
             io.Branch := 0.B
-            io.RegWrite := 1.B         // AUIPC writes to rd
-            io.Mem2Reg := 0.B         // data comes from ALU, not memory
-            io.Aluop := "b110".U    // ALU does PC + imm
+            io.RegWrite := 1.B
+            io.Mem2Reg := 0.B
+            io.Aluop := "b110".U
         }
     }
 }

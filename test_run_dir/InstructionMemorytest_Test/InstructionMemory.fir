@@ -3,10 +3,10 @@ circuit InstructionMemory :
   module InstructionMemory : 
     input clock : Clock
     input reset : UInt<1>
-    output io : {flip readadress : UInt<24>, readdata : UInt<32>}
+    output io : {flip readadress : UInt<32>, readdata : UInt<32>}
     
-    cmem mem : UInt<32>[1024] @[InstructionMemory.scala 12:18]
-    node _io_readdata_T = bits(io.readadress, 9, 0) @[InstructionMemory.scala 14:23]
-    infer mport io_readdata_MPORT = mem[_io_readdata_T], clock @[InstructionMemory.scala 14:23]
-    io.readdata <= io_readdata_MPORT @[InstructionMemory.scala 14:17]
+    cmem mem : UInt<32>[4096] @[InstructionMemory.scala 12:18]
+    node _io_readdata_T = bits(io.readadress, 11, 0) @[InstructionMemory.scala 15:28]
+    read mport io_readdata_MPORT = mem[_io_readdata_T], clock @[InstructionMemory.scala 15:28]
+    io.readdata <= io_readdata_MPORT @[InstructionMemory.scala 15:17]
     
